@@ -54,9 +54,46 @@ El modelo **TCP/IP** o de **Internet** es un derivado del modelo **OSI** pero co
 > **Aplicación**: proporciona aplicaciones de red estándar; Telnet, FTP, HTTP, SMTP, DNS, POP, RLOGIN, SNMTP, etc. Aquí los datos se llaman *mensaje*.  
 > 
 
-
 ## Sección 2: Elementos de programación de comunicaciones en red
 ---
+
+#### Comunicaciones IP y Sockets
+
+En Java el paradigma, será: abrir, leer, escribir y cerrar. En la red, en lugar de un fichero es un Socket.  
+
+##### Direcciones IP y Puertos
+
+Una *dirección IP* es un número que identifica de forma única a cada máquina de la red, y que sirve para comunicarse con ella.\
+
+Un *puerto* es un número que identifica a un *socket* dentro de una máquina. Es de 16 bit, desde el 1 hasta el 65535 que sirve para identificar al proceso.
+
+##### Sockets
+
+Mecanismo básico para realizar transferencias de información entre aplicaciones (emisor y receptor) a través de interfaz en una red de datos, permitiendo una abstracción de la pila de protocolos.\
+
+Un *identificador de socket* es una pareja formada por una *IP + Puerto*.\
+
+Existen distintos tipos de sockets:\
+1. **Socket Stream**. Usan el protocolo *TCP*. Orientados a la conexión. Permite flujo de datos bidireccional, libre de errores sin duplicar paquetes. Para comunicarse siempre con el mismo receptor, manteniendo el canal de comunicación abierto, hasta que se termina al conexión. Una parte ejerce la función de *cliente* y otra el proceso de *servidor*.\
+2. **Socket Datagram**. Usan el protocolo *UDP*. Permite flujo de datos bidireccional, pero pueden llegar fuera de secuencia, incluso pueden tener errores. No necesitan mantener una conexión activa, como si es el caso de los anteriores.\
+
+![Socket Stream](socketstream.jpg)
+
+#### Librerías de Java
+
+Se utiliza el *paquete* **java.net**. 
+
+Las *clases* disponibles son:\
+- **Socket**. Implementa un extremo de la conexión TCP.\
+- **ServerSocket**. Se encarga de implementar el extremo *Servidor* de la conexión en la que se esperarán las conexiones de los clientes.\
+
+También se utiliza el *paquete* **java.io**.
+
+Las *clases* de este paquete son:\
+- **OutputStream**.
+- **InputStream**.
+
+![java.io](javaio.jpg)
 
 ## Sección 3: Comunicación cliente/servidor usando datagramas
 ---
