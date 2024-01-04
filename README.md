@@ -29,20 +29,30 @@
 
 Las siete capas del modelos **OSI** es útil para dividir un problema en diferentes partes. Donde cada capa de un nivel, se comunica con un nivel adyacente superior o inferior.
 
-> **Física**: define la manera en que los datos se convierten en señales digitales...
-> **Enlace de datos**: define la interfaz con la tarjeta de red...
-> **Red**: permite administrar las direcciones y el enrutamiento...
-> **Transporte**: se encarga en subdividir en *paquetes* y control de errores...
-> **Sesión**: define inicio y fin de las sesiones entre equipos...
-> **Presentación**: define el formato/cifrado de los datos, independiente del sistema...
+> **Física**: define la manera en que los datos se convierten en señales digitales.  
+> 
+> **Enlace de datos**: define la interfaz con la tarjeta de red.  
+> 
+> **Red**: permite administrar las direcciones y el enrutamiento.  
+> 
+> **Transporte**: se encarga en subdividir en *paquetes* y control de errores.  
+> 
+> **Sesión**: define inicio y fin de las sesiones entre equipos.  
+> 
+> **Presentación**: define el formato/cifrado de los datos, independiente del sistema.  
+> 
 > **Aplicación**: son aplicaciones de la interfaz.
 
 El modelo **TCP/IP** o de **Internet** es un derivado del modelo **OSI** pero con cuatro capas.
 
-> **Acceso a Red**: especifica la forma de enrutar los datos. Protocolos de acceso a subredes y hardware asociado. Aquí los datos se llman *trama*...
-> **Internet**: responsable del paquete de datos o *datagrama*. Protocolo *IP*...
-> **Transporte**: datos de enrutamiento y estado de la transmisión. Protocolos *TCP* y el *UDP*. Aquí los datos se llaman *segmento*...
-> **Aplicación**: proporciona aplicaciones de red estándar; Telnet, FTP, HTTP, SMTP, DNS, POP, RLOGIN, SNMTP, etc. Aquí los datos se llaman *mensaje*...
+> **Acceso a Red**: especifica la forma de enrutar los datos. Protocolos de acceso a subredes y hardware asociado. Aquí los datos se llman *trama*.  
+> 
+> **Internet**: responsable del paquete de datos o *datagrama*. Protocolo *IP*.  
+> 
+> **Transporte**: datos de enrutamiento y estado de la transmisión. Protocolos *TCP* y el *UDP*. Aquí los datos se llaman *segmento*.  
+> 
+> **Aplicación**: proporciona aplicaciones de red estándar; Telnet, FTP, HTTP, SMTP, DNS, POP, RLOGIN, SNMTP, etc. Aquí los datos se llaman *mensaje*.  
+> 
 
 
 ## Sección 2: Elementos de programación de comunicaciones en red
