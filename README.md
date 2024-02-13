@@ -98,6 +98,38 @@ Las *clases* de este paquete son:
 ## Sección 3: Comunicación cliente/servidor usando datagramas
 ---
 
+#### Socket UDP
+
+El protocolo **UDP** (User Datagram Protocol), protocolo no orientado a la conexión. El flujo de información es unidireccional entre dispositivos. EL receptor no emitirá una confirmación de la recepción de los datos recibidos. La comunicación es mucho más rápida, ya que no existe *feedback*.
+
+Las características principales son:
+* Envío sin conexión.
+* No hay control de flujo.
+* No hay control de congestión en la red.
+* Comunicación más rápida entre dispositivos.
+
+#### DatagramPacket
+
+Las *clases* en Java son: **datagramPacket()** y **datagramSocket()**. Permiten establecer la comunicación y enviar y recibir los paquetes.
+
+Para implementar los *socket* en el servidor:
+> 1. Implementar los socket en el servidor.
+> import java.net.datagramSocket;
+> import java.net.datagramPacket;
+> 2. Crear el socket apuntando al puerto por el que comunicaremos DatagramSocket.
+> 3. Crear el objeto que nos permitirá transmitir los paquetes (DatagramPaket) 
+> A través, de los métodos send() y receive(), enviaremos o recibiremos información del/al cliente.
+
+Para implementar los *socket* en el cliente:
+> 1. Implementar los socket en el cliente.
+> import java.net.DatagramPacket;
+> import java.net.DatagramSocket;
+> 2. Crear el socket apuntando al puerto por el que comunicamos (DatagramSocket).
+> 3. Crear el objeto que nos permitirá transmitir los paquetes DatagramPacket.
+> A través de los métodos send() y receive() enviaremos o recibiremos información del/al cliente.
+> ¡Importante! Al crear el objeto DatagramPacket, debe apuntar al servidor y al puerto por el que vamos a comunicar.
+
+
 ## Sección 4: Transmisón de información compleja. Serialización
 ---
 
