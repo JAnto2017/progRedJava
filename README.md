@@ -129,12 +129,25 @@ Para implementar los *socket* en el cliente:
 > A través de los métodos send() y receive() enviaremos o recibiremos información del/al cliente.
 > ¡Importante! Al crear el objeto DatagramPacket, debe apuntar al servidor y al puerto por el que vamos a comunicar.
 
-Ejemplos de ejecución de los programas *servidor* y *cliente*.
+Ejemplos de ejecución de los programas *servidor* y *cliente*. Notar que la ejecución es con el comando **java nombreFichero.java** para evitar errores de ejecución:
+**Servidor**
 ![Servidor UDP](udpserver.png) <br>
+
+**Cliente**
 ![Cliente UDP](udpclient.png)
 
 ## Sección 4: Transmisón de información compleja. Serialización
 ---
+
+#### Serialización
+
+Es la transmisón de información compleja. Entendiendo por información simple: los enteros, los caracteres y similares.
+
+**Serialización = Objeto + Stream bytes**.   
+**Deserialización = Stream bytes + Objeto**.
+
+En Java se debe implementar **ObjectInputStream.readObject**, para la lectura de objetos serializados. Y **ObjectOutputStream.writeObject**, para la escritura de objetos serializados.
+
 
 ## Sección 5: Comunicaciones en red con hilos. Entornos gráficos con la librería Swing
 ---
