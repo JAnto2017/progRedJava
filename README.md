@@ -129,6 +129,9 @@ Para implementar los *socket* en el cliente:
 > A través de los métodos send() y receive() enviaremos o recibiremos información del/al cliente.
 > ¡Importante! Al crear el objeto DatagramPacket, debe apuntar al servidor y al puerto por el que vamos a comunicar.
 
+Ejemplos de ejecución de los programas *servidor* y *cliente*.
+![Servidor UDP](udpclient.png) <br>
+![Cliente UDP](udpclient.png)
 
 ## Sección 4: Transmisón de información compleja. Serialización
 ---
