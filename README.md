@@ -161,3 +161,5 @@ En Java se debe implementar **ObjectInputStream.readObject**, para la lectura de
 Interesa usar hilos, ya que el *Servidor* siempre está escuchando, lo que hace que tenga dedicación exclusiva. Para evitar esto se usan los hilos.
 Se crea un hilo paralelo en ejecución por cada cliente que se conecte. Así el *Servidor* que tienes muchos *Clientes* conectados los puede atender, además de realizar otros servicios y funciones.
 
+![clienteservidorswing](https://github.com/JAnto2017/progRedJava/assets/32310100/0b0e1861-a5bc-4c6c-b200-e64c7c39b1af)
+![clienteservidorswingdos](https://github.com/JAnto2017/progRedJava/assets/32310100/8694e3a8-9556-4172-ba5f-4e91eda27f2a)
