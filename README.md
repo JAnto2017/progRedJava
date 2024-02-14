@@ -151,3 +151,13 @@ En Java se debe implementar **ObjectInputStream.readObject**, para la lectura de
 
 ## Sección 5: Comunicaciones en red con hilos. Entornos gráficos con la librería Swing
 ---
+
+#### Aplicación en red con hilos y en entorno gráfico
+
++ Thread (hilos en la programación en red)
++ Swing (librería gráfica)
++ Comunicaciones red.
+
+Interesa usar hilos, ya que el *Servidor* siempre está escuchando, lo que hace que tenga dedicación exclusiva. Para evitar esto se usan los hilos.
+Se crea un hilo paralelo en ejecución por cada cliente que se conecte. Así el *Servidor* que tienes muchos *Clientes* conectados los puede atender, además de realizar otros servicios y funciones.
+

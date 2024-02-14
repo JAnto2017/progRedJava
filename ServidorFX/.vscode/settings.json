@@ -1,0 +1,17 @@
+{
+	"java.project.sourcePaths": [
+		"src"
+	],
+	"java.project.outputPath": "bin",
+	"java.project.referencedLibraries": [
+		"lib/**/*.jar",
+		"/home/anto/Documentos/Curso Prog-Red-Java/secc_05/lib/javafx.base.jar",
+		"/home/anto/Documentos/Curso Prog-Red-Java/secc_05/lib/javafx.controls.jar",
+		"/home/anto/Documentos/Curso Prog-Red-Java/secc_05/lib/javafx.fxml.jar",
+		"/home/anto/Documentos/Curso Prog-Red-Java/secc_05/lib/javafx.graphics.jar",
+		"/home/anto/Documentos/Curso Prog-Red-Java/secc_05/lib/javafx.media.jar",
+		"/home/anto/Documentos/Curso Prog-Red-Java/secc_05/lib/javafx.swing.jar",
+		"/home/anto/Documentos/Curso Prog-Red-Java/secc_05/lib/javafx.web.jar",
+		"/home/anto/Documentos/Curso Prog-Red-Java/secc_05/lib/javafx-swt.ja"
+	]
+}
