@@ -144,10 +144,13 @@ Para implementar los *socket* en el cliente:
 > ¡Importante! Al crear el objeto DatagramPacket, debe apuntar al servidor y al puerto por el que vamos a comunicar.
 
 Ejemplos de ejecución de los programas *servidor* y *cliente*. Notar que la ejecución es con el comando **java nombreFichero.java** para evitar errores de ejecución:
+
 **Servidor**
+
 ![Servidor UDP](udpserver.png) <br>
 
 **Cliente**
+
 ![Cliente UDP](udpclient.png)
 
 ## Sección 4: Transmisón de información compleja. Serialización
